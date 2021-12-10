@@ -12,8 +12,8 @@ class RecipeModel: ObservableObject {
     @Published var recipes = [Recipe]()
     
     init() {
-        // Parsed the local json file
+        // Create an instance of data service and get the data
+        recipes = DataService.getLocalData()
         
-        // Set the recipes property
     }
 }

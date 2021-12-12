@@ -18,7 +18,7 @@ struct RecipeDetailView: View {
                 // MARK: Recipe image
                 Image(recipe.image)
                     .resizable()
-                    .scaledToFill()
+                    .aspectRatio(1.2, contentMode: .fill)
                     .padding(.bottom, 5.0)
                 
                 // MARK: Ingredients

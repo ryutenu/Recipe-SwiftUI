@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E7B6926027638BBB00D13533 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B6925F27638BBB00D13533 /* DataService.swift */; };
+		E7B692852766233000D13533 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B692842766233000D13533 /* RecipeDetailView.swift */; };
 		E7FFDC3E275F9CB700EF104B /* Recipe_SwiftUI_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FFDC3D275F9CB700EF104B /* Recipe_SwiftUI_App.swift */; };
 		E7FFDC40275F9CB700EF104B /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FFDC3F275F9CB700EF104B /* RecipeListView.swift */; };
 		E7FFDC42275F9CB800EF104B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7FFDC41275F9CB800EF104B /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		E7B6925F27638BBB00D13533 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		E7B692842766233000D13533 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 		E7FFDC3A275F9CB700EF104B /* Recipe-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7FFDC3D275F9CB700EF104B /* Recipe_SwiftUI_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe_SwiftUI_App.swift; sourceTree = "<group>"; };
 		E7FFDC3F275F9CB700EF104B /* RecipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListView.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				E7FFDC3F275F9CB700EF104B /* RecipeListView.swift */,
+				E7B692842766233000D13533 /* RecipeDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7FFDC53275FA00100EF104B /* Recipe.swift in Sources */,
+				E7B692852766233000D13533 /* RecipeDetailView.swift in Sources */,
 				E7FFDC55275FA13C00EF104B /* RecipeModel.swift in Sources */,
 				E7FFDC40275F9CB700EF104B /* RecipeListView.swift in Sources */,
 				E7FFDC3E275F9CB700EF104B /* Recipe_SwiftUI_App.swift in Sources */,

@@ -11,6 +11,8 @@ struct RecipeDetailView: View {
     
     var recipe: Recipe
     
+    @State var selectedServingSize = 2
+    
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
@@ -19,16 +21,32 @@ struct RecipeDetailView: View {
                 Image(recipe.image)
                     .resizable()
                     .scaledToFill()
-                    .padding(.bottom, 5.0)
+                
+                // MARK: Serving Size Picker
+                VStack(alignment: .leading) {
+                    Text("Select your serving size:")
+                    
+                    Picker("", selection: $selectedServingSize) {
+                        Text("2").tag(2)
+                        Text("4").tag(4)
+                        Text("6").tag(6)
+                        Text("8").tag(8)
+                    }
+                    .pickerStyle(.segmented)
+                    .frame(width: 160)
+                }
+                .padding()
                 
                 // MARK: Ingredients
-                Text("Ingredients")
-                    .font(.headline)
-                    .padding(.bottom, 5.0)
-                    .padding(.horizontal)
-                
-                ForEach (recipe.ingredients) { ingredient in
-                    Text("- " + ingredient.name)
+                VStack(alignment: .leading) {
+                    Text("Ingredients")
+                        .font(.headline)
+                        .padding([.bottom, .top], 5)
+                    
+                    ForEach (recipe.ingredients) { ingredient in
+                        
+                        Text("- " + RecipeModel.getPortion(ingredient: ingredient, recipeServings: recipe.servings, targetServings: selectedServingSize) + " " + ingredient.name.lowercased())
+                    }
                 }
                 .padding(.horizontal)
                 
@@ -36,14 +54,16 @@ struct RecipeDetailView: View {
                 Divider()
                 
                 // MARK: Directions
-                Text("Directions")
-                    .font(.headline)
-                    .padding([.top, .bottom], 5.0)
-                    .padding(.horizontal)
-                
-                ForEach(0..<recipe.directions.count, id: \.self) { index in
-                    Text(String(index+1) + ". " + recipe.directions[index])
-                        .padding(.bottom, 5.0)
+                VStack(alignment: .leading) {
+                    Text("Directions")
+                        .font(.headline)
+                        .padding([.top, .bottom], 5.0)
+                        .padding(.horizontal)
+                    
+                    ForEach(0..<recipe.directions.count, id: \.self) { index in
+                        Text(String(index+1) + ". " + recipe.directions[index])
+                            .padding(.bottom, 5)
+                    }
                 }
                 .padding(.horizontal)
             }

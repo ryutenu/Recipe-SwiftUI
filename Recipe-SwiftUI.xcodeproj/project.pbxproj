@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E79C84B929D7B963009AB799 /* RecipeFeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79C84B829D7B963009AB799 /* RecipeFeaturedView.swift */; };
+		E79C84BC29DA23C6009AB799 /* Rational.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79C84BB29DA23C6009AB799 /* Rational.swift */; };
 		E7B6926027638BBB00D13533 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B6925F27638BBB00D13533 /* DataService.swift */; };
 		E7B692852766233000D13533 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B692842766233000D13533 /* RecipeDetailView.swift */; };
 		E7B692872767838D00D13533 /* RecipeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B692862767838D00D13533 /* RecipeTabView.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		E79C84B829D7B963009AB799 /* RecipeFeaturedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFeaturedView.swift; sourceTree = "<group>"; };
+		E79C84BB29DA23C6009AB799 /* Rational.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rational.swift; sourceTree = "<group>"; };
 		E7B6925F27638BBB00D13533 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		E7B692842766233000D13533 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 		E7B692862767838D00D13533 /* RecipeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTabView.swift; sourceTree = "<group>"; };
@@ -46,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E79C84BA29DA23A6009AB799 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E79C84BB29DA23C6009AB799 /* Rational.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		E7FFDC31275F9CB700EF104B = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +81,7 @@
 				E7FFDC4D275F9D3300EF104B /* Models */,
 				E7FFDC4F275F9D4300EF104B /* Services */,
 				E7FFDC4E275F9D3A00EF104B /* Data */,
+				E79C84BA29DA23A6009AB799 /* Utilities */,
 				E7FFDC41275F9CB800EF104B /* Assets.xcassets */,
 				E7FFDC43275F9CB800EF104B /* Preview Content */,
 			);
@@ -201,6 +212,7 @@
 			files = (
 				E7FFDC53275FA00100EF104B /* Recipe.swift in Sources */,
 				E7B692852766233000D13533 /* RecipeDetailView.swift in Sources */,
+				E79C84BC29DA23C6009AB799 /* Rational.swift in Sources */,
 				E7FFDC55275FA13C00EF104B /* RecipeModel.swift in Sources */,
 				E7FFDC40275F9CB700EF104B /* RecipeListView.swift in Sources */,
 				E7FFDC3E275F9CB700EF104B /* Recipe_SwiftUI_App.swift in Sources */,

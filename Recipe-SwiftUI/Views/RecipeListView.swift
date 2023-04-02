@@ -22,7 +22,8 @@ struct RecipeListView: View {
                     .font(.largeTitle)
                 
                 ScrollView {
-                    // Use with ScrollView, only load data necessarily, save memory
+                    // A LazyVStack only renders items as needed whereas a VStack renders everything at once.
+                    // Use with ScrollView, save memory
                     LazyVStack(alignment: .leading) {
                         ForEach(model.recipes) { recipe in
                             
@@ -31,7 +32,7 @@ struct RecipeListView: View {
                             } label: {
                                 
                                 // MARK: Row item
-                                HStack(spacing: 20.0) {
+                                HStack(spacing: 20) {
                                     Image(recipe.image)
                                         .resizable()
                                         .scaledToFill()

@@ -19,7 +19,7 @@ struct RecipeListView: View {
                 Text("All Recipes")
                     .bold()
                     .padding(.top, 40)
-                    .font(.largeTitle)
+                    .font(Font.custom("Avenir Heavy", size: 24))
                 
                 ScrollView {
                     // A LazyVStack only renders items as needed whereas a VStack renders everything at once.
@@ -43,7 +43,7 @@ struct RecipeListView: View {
                                     VStack(alignment: .leading) {
                                         Text(recipe.name)
                                             .foregroundColor(.black)
-                                            .bold()
+                                            .font(Font.custom("Avenir Heavy", size: 16))
                                         
                                         RecipeHighlights(highlights: recipe.highlights)
                                             .foregroundColor(.black)
